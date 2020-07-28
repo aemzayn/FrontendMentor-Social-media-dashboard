@@ -1,0 +1,22 @@
+{
+  "name": "social-media-dashboard",
+  "version": "1.0.0",
+  "description": "![Preview dekstop 1920px](./previews/1920px.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aemzayn/FrontendMentor-Social-media-dashboard.git"
+  },
+  "keywords": [
+    "dashboard"
+  ],
+  "author": "Ahmad Muslih Zain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aemzayn/FrontendMentor-Social-media-dashboard/issues"
+  },
+  "homepage": "https://github.com/aemzayn/FrontendMentor-Social-media-dashboard#readme"
+}

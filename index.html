@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Social Media Dashboard</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="dark">
+  <header>
+    <div>
+      <h1>Social Media Dashboard</h1>
+      <span>Total Followers: 23,004</span>
+    </div>
+    <div class="switch-container">
+      <span>Dark Mode</span>
+      <div class="switch">
+        <input id="input" type="checkbox">
+        <span class="slider round"></span>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="dashboard facebook">
+      <p><img src="./images/icon-facebook.svg" alt="facebook">@nathanf</p>
+      <h2>1987</h2>
+      <p class="sub">FOLLOWERS</p>
+      <p class="growth up"> <img src="./images/icon-up.svg" alt="icon-up"> 12 Today</p>
+    </div>
+    <div class="dashboard twitter">
+      <p><img src="./images/icon-twitter.svg" alt="twitter">@nathanf</p>
+      <h2>1044</h2>
+      <p class="sub">FOLLOWERS</p>
+      <p class="growth up"> <img src="./images/icon-up.svg" alt="icon-up"> 99 Today</p>
+    </div>
+    <div class="dashboard instagram">
+      <p><img src="./images/icon-instagram.svg" alt="instagram">@realnathanf</p>
+      <h2>1987</h2>
+      <p class="sub">FOLLOWERS</p>
+      <p class="growth up"> <img src="./images/icon-up.svg" alt="icon-up"> 12 Today</p>
+    </div>
+    <div class="dashboard youtube">
+      <p><img src="./images/icon-youtube.svg" alt="youtube">Nathan F.</p>
+      <h2>1987</h2>
+      <p class="sub">FOLLOWERS</p>
+      <p class="growth down"> <img src="./images/icon-down.svg" alt="icon-down"> 12 Today</p>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <div class="overview">
+    <h3>Overview - Today</h3>
+    <div class="overviews">
+
+      <!-- FB Page Views -->
+      <div class="overview-items">
+        <div>
+          <p>Page Views</p>
+          <img src="./images/icon-facebook.svg" alt="facebook">
+        </div>
+        <div>
+          <h4>87</h4>
+          <span class="up"><img src="./images/icon-up.svg" alt="icon-up"> 3%</span>
+        </div>
+      </div>
+
+      <!-- FB Likes -->
+      <div class="overview-items">
+        <div>
+          <p>Likes</p>
+          <img src="./images/icon-facebook.svg" alt="facebook">
+        </div>
+        <div>
+          <h4>52</h4>
+          <span class="down"><img src="./images/icon-down.svg" alt="icon-down"> 2%</span>
+        </div>
+      </div>
+
+      <!-- Instagram Likes -->
+      <div class="overview-items">
+        <div>
+          <p>Likes</p>
+          <img src="./images/icon-instagram.svg" alt="instagram">
+        </div>
+        <div>
+          <h4>5462</h4>
+          <span class="up"><img src="./images/icon-up.svg" alt="icon-up"> 2257%</span>
+        </div>
+      </div>
+
+      <!-- IG Profile Views -->
+      <div class="overview-items">
+        <div>
+          <p>Profile Views</p>
+          <img src="./images/icon-instagram.svg" alt="instagram">
+        </div>
+        <div>
+          <h4>52k</h4>
+          <span class="up"><img src="./images/icon-up.svg" alt="icon-up"> 1375%</span>
+        </div>
+      </div>
+
+      <!-- Retweets -->
+      <div class="overview-items">
+        <div>
+          <p>Retweets</p>
+          <img src="./images/icon-twitter.svg" alt="twitter">
+        </div>
+        <div>
+          <h4>117</h4>
+          <span class="up"><img src="./images/icon-up.svg" alt="icon-up"> 303%</span>
+        </div>
+      </div>
+      
+      <!-- Twitter Likes -->
+      <div class="overview-items">
+        <div>
+          <p>Likes</p>
+          <img src="./images/icon-twitter.svg" alt="twitter">
+        </div>
+        <div>
+          <h4>507</h4>
+          <span class="up"><img src="./images/icon-up.svg" alt="icon-up"> 553%</span>
+        </div>
+      </div>
+
+      <!-- YT Likes -->
+      <div class="overview-items">
+        <div>
+          <p>Page Views</p>
+          <img src="./images/icon-youtube.svg" alt="youtube">
+        </div>
+        <div>
+          <h4>107</h4>
+          <span class="down"><img src="./images/icon-down.svg" alt="icon-down"> 3%</span>
+        </div>
+      </div>
+
+      <!-- Total Views -->
+      <div class="overview-items">
+        <div>
+          <p>Page Views</p>
+          <img src="./images/icon-youtube.svg" alt="youtube">
+        </div>
+        <div>
+          <h4>1407</h4>
+          <span class="down"><img src="./images/icon-down.svg" alt="icon-down"> 12%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const body = document.getElementsByTagName('body')[0];
+    document.getElementById('input').addEventListener('click', function(e) {
+    let { checked } = e.target
+    console
+    if(!checked) {
+      body.classList.add('dark');
+      body.classList.remove('light');
+    } else {
+      body.classList.add('light');
+      body.classList.remove('dark');
+    }
+  })
+
+  </script>
+</body>
+</html>
